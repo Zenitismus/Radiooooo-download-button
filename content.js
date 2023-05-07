@@ -16,11 +16,11 @@ async function setupDownloadButton(){
     let panel = document.getElementsByClassName("group command")[0];
     let downloadBtn = document.createElement('button');
     downloadBtn.onclick = downloadSong;
-    downloadBtn.innerText = "⬇️";
     downloadBtn.setAttribute("type", "button");
     downloadBtn.className = "button style-action";
-    downloadBtn.style = "font-size:26pt;margin-size:5px;padding-left:0;";
-    panel.appendChild(downloadBtn);
+    downloadBtn.style = "padding: 0;";
+	downloadBtn.innerHTML = '<img src= "https://svgshare.com/i/suz.svg" />';
+	panel.appendChild(downloadBtn);
 }
 
 setupDownloadButton();
